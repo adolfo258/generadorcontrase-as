@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Contraseñas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c07a2df9a9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="generador.css">
+</head>
+<body>
+    <h1>Generador de Contraseñas</h1>
+    <div class="contenedor">
+        <form action="" class="app" id="app">
+            <div class="fila numero-caracteres">
+                <div class="col">
+                    <label for="">Numero de Caracteres</label>
+                </div>
+                <div class="col botones">
+                    <div>
+                        <button class="btn" id="btn-menos-uno"><i class="fas fa-minus"></i></button>
+                    </div>
+                    <div>
+                        <input type="text" id="numero-caracteres" readonly value=12>
+                    </div>
+                    <div>
+                        <button class="btn" id="btn-mas-uno"><i class="fas fa-plus"></i></button>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="fila simbolos">
+                <div class="col">
+                    <label for="">¿Incluir Simbolos?</label>
+                </div>
+                <div class="col">
+                    <button class="btn" id="btn-simbolos"><i class="fas fa-check"></i></button>
+                </div>
+            </div>
+            <div class="fila numeros">
+                <div class="col">
+                    <label for="">¿Incluir Numeros?</label>
+                </div>
+                <div class="col">
+                    <button class="btn" id="btn-numeros"><i class="fas fa-check"></i></button>
+                </div>
+            </div>
+            <div class="fila mayusculas">
+                <div class="col">
+                    <label for="">¿Incluir Mayusculas?</label>
+                </div>
+                <div class="col">
+                    <button class="btn" id="btn-mayusculas"><i class="fas fa-check"></i></button>
+                </div>
+            </div>
+            <div class="fila generar">
+                <div class="col">
+                    <button class="btn btn-generar" id="btn-generar">Generar <i class="fas fa-lock"></i></button>
+                </div>
+                <div class="col">
+                    <input type="text" class="input-password" id="input-password" readonly>
+                </div>
+            </div>
+
+            <div class="fila alerta">
+                <div class="col">
+                    <div id="alerta-copiado" class="alerta-copiado">
+                        <p>¡Copiado! <i class="fas fa-copy"></i></p>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="github-container">
+        <a href="https://github.com/adolfo258/Product-App">
+            <img src="/img/github.svg" alt="">
+            <p>Ir al repositorio</p>
+        </a>
+    </div>
+
+    <script src="./geneador.js"></script>
+</body>
+</html>

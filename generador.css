@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+
+body{
+    width: 100%;
+    color: #000;
+    background-color: #ddeefc;
+}
+
+h1{
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.contenedor{
+    max-width: 500px;
+    width: 90%;
+    margin: 40px auto;
+}
+
+.fila{
+    height: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.col{
+    width: 50%;
+}
+
+.app label{
+    line-height: 40px;
+}
+.app input{
+    border-radius: 4px;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    border: none;
+}
+
+.btn{
+    width: 100%;
+    background-color: #8f0c0c;
+    color: #fff;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .3s;
+}
+.btn:hover{
+    background-color: #eb5555;
+}
+
+.btn.active{
+    background-color: #ff0000;
+}
+
+.botones div{
+    width: 100%;
+}
+
+.botones{
+    display: flex;
+    justify-content: space-around;
+}
+
+@media screen and (max-width:470px){
+    *{
+        font-size: 14px;
+    }
+}
+
+.alerta{
+    display: none;
+}
+.alerta.active{
+    display: block;
+}
+
+.github-container{
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.github-container img{
+    width: 60px;
+}
